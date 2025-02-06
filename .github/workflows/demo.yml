@@ -2,7 +2,9 @@ name: demo-action
 
 on:
   push:
-      branches: main
+      # branches: main
+  issues:
+      types: [opened]
   workflow_dispatch:
 jobs:
     build:
