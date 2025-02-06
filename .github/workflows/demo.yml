@@ -16,7 +16,7 @@ jobs:
             run: echo Hello world
 
           - name: Upload artifact
-            uses: actions/upload-artifact@v4
+          - uses: actions/upload-artifact@v4
             with:
               name: build=artifact
               path: ${{github.workspce}}
