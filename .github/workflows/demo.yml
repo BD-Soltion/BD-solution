@@ -14,4 +14,9 @@ jobs:
           
           - name: run a sample job
             run: echo Hello world
-  
+
+          - name: Upload artifact
+            uses: actions/upload-artifact@v4
+            with:
+              name: build=artifect
+              path: $({github.workspce})
